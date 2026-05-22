@@ -1,0 +1,11 @@
+// Simple admin routes for testing
+import express from 'express';
+
+const router = express.Router();
+
+// Simple test route
+router.get("/test", (req, res) => {
+  res.json({ message: "Admin routes working", timestamp: new Date().toISOString() });
+});
+
+export default router;

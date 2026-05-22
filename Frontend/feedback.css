@@ -1,0 +1,110 @@
+/* Feedback.css - Light theme with purple accent */
+
+.fb-container {
+  padding: 24px;
+  min-height: calc(100vh - 120px);
+  background: #f8fafc;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.fb-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(17,24,39,0.06);
+  color: #0f172a;
+}
+
+/* header */
+.fb-header {
+  margin-bottom: 14px;
+}
+
+/* score card */
+.fb-score-card {
+  text-align: center;
+}
+
+.fb-score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg,#fbf7ff,#ffffff);
+  border: 1px solid rgba(139,92,246,0.12);
+  box-shadow: 0 4px 10px rgba(139,92,246,0.06);
+  flex-direction: column;
+}
+
+.fb-score-num {
+  font-size: 36px;
+  font-weight: 800;
+  color: #4c1d95; /* purple */
+}
+
+.fb-score-sub {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ai comment */
+.fb-ai-comment {
+  font-size: 13px;
+  color: #374151;
+  padding: 6px 12px;
+}
+
+/* metric boxes */
+.fb-metric {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+.fb-metric-title {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.fb-metric-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 4px;
+}
+
+.fb-progress {
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.fb-progress-bar {
+  height: 100%;
+  border-radius: 6px;
+  width: 0%;
+  transition: width 0.9s ease;
+}
+
+/* transcript */
+.fb-transcript {
+  white-space: pre-wrap;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  color: #111827;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+/* responsiveness */
+@media (max-width: 880px) {
+  .fb-top { flex-direction: column; }
+  .fb-score-card { margin-bottom: 12px; }
+}
